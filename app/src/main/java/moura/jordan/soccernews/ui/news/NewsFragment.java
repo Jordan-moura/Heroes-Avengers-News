@@ -22,7 +22,7 @@ public class NewsFragment extends Fragment {
         binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        newsViewModel.getNews().observe(getViewLifecycleOwner(), news ->{
+        newsViewModel.getNews().observe(getViewLifecycleOwner(), news ->{   
 
                 });
         return root;
