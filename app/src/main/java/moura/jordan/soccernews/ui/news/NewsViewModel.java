@@ -7,21 +7,45 @@ import androidx.lifecycle.ViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import moura.jordan.soccernews.data.remote.SoccerNewsApi;
 import moura.jordan.soccernews.domain.News;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NewsViewModel extends ViewModel {
 
-    private final MutableLiveData<List<News>> news;
+    private final MutableLiveData<List<News>> news = new MutableLiveData<>();
+    private final SoccerNewsApi api;
 
     public NewsViewModel() {
-         news = new MutableLiveData<>();
-        // TODO Mock De Noticias
-        List<News> temp_news = new ArrayList<>();
-        temp_news.add(new News("Ferroviaria tem Desfalque Importante", "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."));
-        temp_news.add(new News("Ferroviaria joga no Sabado", "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."));
-        temp_news.add(new News("Copa do Mundo feminina esta terminando", "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."));
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://jordan-moura.github.io/Women-s-Soccer-News-Api/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
 
-        news.setValue(temp_news);
+        api = retrofit.create(SoccerNewsApi.class);
+        this.findNews();
+    }
+
+    private void findNews() {
+        api.getNews().enqueue(new Callback<List<News>>() {
+            @Override
+            public void onResponse(Call<List<News>> call, Response<List<News>> response) {
+                if(response.isSuccessful()){
+                    news.setValue(response.body());
+                }else{
+                    
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<News>> call, Throwable t) {
+
+            }
+        });
     }
 
     public LiveData<List<News>> getNews() {
