@@ -20,7 +20,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ImageContrastCheck"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            android:src="@color/black"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvTitle"
@@ -47,14 +48,14 @@
             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
             tools:text="As meninas da ferrinha venceram o palmeiras no ultimo domingo" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/btOpenLink"
             style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/default_margin"
             android:layout_marginTop="@dimen/default_margin"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/default_half_margin"
             android:text="@string/txt_Open_Link"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,24 +65,24 @@
             android:id="@+id/ivFavorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/default_margin"
-            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/default_half_margin"
+            android:contentDescription="@string/cd_favorites_icon"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
-            app:srcCompat="@drawable/ic_favorite"
-            android:contentDescription="@string/cd_favorites_icon"/>
+            app:srcCompat="@drawable/ic_favorite" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
-            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_half_margin"
+            android:contentDescription="@string/cd_share_icon"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
-            app:srcCompat="@drawable/ic_share"
-            android:contentDescription="@string/cd_share_icon"/>
+            app:srcCompat="@drawable/ic_share" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
