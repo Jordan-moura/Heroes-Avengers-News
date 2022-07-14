@@ -1,11 +1,15 @@
 package moura.jordan.soccernews.ui.news;
 
+import android.app.Application;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import androidx.room.Room;
 
 import java.util.List;
 
+import moura.jordan.soccernews.data.local.AppDatabase;
 import moura.jordan.soccernews.data.remote.SoccerNewsApi;
 import moura.jordan.soccernews.domain.News;
 import retrofit2.Call;
@@ -26,6 +30,7 @@ public class NewsViewModel extends ViewModel {
                 .build();
 
         api = retrofit.create(SoccerNewsApi.class);
+
         this.findNews();
     }
 
