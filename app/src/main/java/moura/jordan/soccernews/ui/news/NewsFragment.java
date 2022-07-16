@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import moura.jordan.soccernews.MainActivity;
+import moura.jordan.soccernews.ui.MainActivity;
 import moura.jordan.soccernews.data.local.AppDatabase;
 import moura.jordan.soccernews.databinding.FragmentNewsBinding;
 import moura.jordan.soccernews.ui.adapter.NewsAdapter;

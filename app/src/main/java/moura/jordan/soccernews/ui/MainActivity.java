@@ -1,4 +1,4 @@
-package moura.jordan.soccernews;
+package moura.jordan.soccernews.ui;
 
 import android.os.Bundle;
 
@@ -9,6 +9,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.room.Room;
 
+import moura.jordan.soccernews.R;
 import moura.jordan.soccernews.data.local.AppDatabase;
 import moura.jordan.soccernews.databinding.ActivityMainBinding;
 

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.List;
 
-import moura.jordan.soccernews.MainActivity;
+import moura.jordan.soccernews.ui.MainActivity;
 import moura.jordan.soccernews.databinding.FragmentFavoritesBinding;
 import moura.jordan.soccernews.domain.News;
 import moura.jordan.soccernews.ui.adapter.NewsAdapter;
