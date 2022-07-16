@@ -5,70 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4fb550-da0f-45dc-b2ff-5461edd24ab9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/androidTest/java/moura/jordan/soccernews/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/data/local/NewsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/data/remote/SoccerNewsApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/domain/News.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/ui/adapter/NewsAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/ui/favorites/FavoritesFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/ui/favorites/FavoritesViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/ui/news/NewsFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/moura/jordan/soccernews/ui/news/NewsViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_favorite.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_share.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_soccer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_favorites.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_news.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/news_item.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/moura/jordan/soccernews/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -84,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Women-s-Soccer-News" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
