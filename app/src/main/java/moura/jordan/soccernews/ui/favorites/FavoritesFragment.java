@@ -20,28 +20,27 @@ import moura.jordan.soccernews.ui.adapter.NewsAdapter;
 public class FavoritesFragment extends Fragment {
 
     private FragmentFavoritesBinding binding;
+    private FavoritesViewModel favoritesViewModel;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        FavoritesViewModel favoritesViewModel = new ViewModelProvider(this).get(FavoritesViewModel.class);
+        favoritesViewModel = new ViewModelProvider(this).get(FavoritesViewModel.class);
 
         binding = FragmentFavoritesBinding.inflate(inflater, container, false);
 
-        MainActivity activity = (MainActivity) getActivity();
         loadFavoriteNews();
 
         return binding.getRoot();
     }
 
     private void loadFavoriteNews() {
-        MainActivity activity = (MainActivity) getActivity();
-        if (activity != null) {
-            List<News> favoriteNews = activity.getDb().newsDAO().loadFavoriteNews();
+        favoritesViewModel.loadFavoriteNews().observe(getViewLifecycleOwner(), localNews -> {
             binding.rvNews.setLayoutManager(new LinearLayoutManager(getContext()));
-            binding.rvNews.setAdapter(new NewsAdapter(favoriteNews, updatedNews -> {
-                activity.getDb().newsDAO().save(updatedNews);
+            binding.rvNews.setAdapter(new NewsAdapter(localNews, updatedNews -> {
+                favoritesViewModel.saveNews(updatedNews);
                 loadFavoriteNews();
             }));
-        }
+        });
     }
 
     @Override
