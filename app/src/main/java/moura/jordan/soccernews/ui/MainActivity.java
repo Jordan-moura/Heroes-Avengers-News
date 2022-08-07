@@ -1,12 +1,17 @@
 package moura.jordan.soccernews.ui;
 
+import static android.view.View.TEXT_ALIGNMENT_CENTER;
+
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import java.util.Objects;
 
 import moura.jordan.soccernews.R;
 import moura.jordan.soccernews.databinding.ActivityMainBinding;

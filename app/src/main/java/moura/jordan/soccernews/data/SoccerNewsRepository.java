@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class SoccerNewsRepository {
 
     // Region Constantes
-    private static final String REMOTE_API_URL = "https://jordan-moura.github.io/Women-s-Soccer-News-Api/";
+    private static final String REMOTE_API_URL = "https://jordan-moura.github.io/Heroes-Avengers-Api/";
     private static final String LOCAL_DB_NAME = "soccer-news";
 
     // region atributos: encapsulam o acesso a API (Retrofit) e banco de dados local (Room)
