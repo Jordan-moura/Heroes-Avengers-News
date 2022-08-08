@@ -2,6 +2,9 @@ package moura.jordan.soccernews;
 
 import android.app.Application;
 
+import dagger.hilt.android.HiltAndroidApp;
+
+@HiltAndroidApp
 public class App extends Application {
 
     private static App instance;

@@ -13,9 +13,12 @@ import androidx.navigation.ui.NavigationUI;
 
 import java.util.Objects;
 
+import dagger.hilt.EntryPoint;
+import dagger.hilt.android.AndroidEntryPoint;
 import moura.jordan.soccernews.R;
 import moura.jordan.soccernews.databinding.ActivityMainBinding;
 
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;

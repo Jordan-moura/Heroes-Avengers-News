@@ -7,20 +7,27 @@ import androidx.lifecycle.ViewModel;
 
 import java.util.List;
 
-import moura.jordan.soccernews.data.SoccerNewsRepository;
-import moura.jordan.soccernews.domain.News;
+import javax.inject.Inject;
 
+import dagger.hilt.android.lifecycle.HiltViewModel;
+import moura.jordan.soccernews.domain.News;
+import moura.jordan.soccernews.domain.repository.HeroesNewsRepository;
+
+@HiltViewModel
 public class FavoritesViewModel extends ViewModel {
 
-    public FavoritesViewModel() {
+    private final HeroesNewsRepository repo;
+
+    @Inject
+    public FavoritesViewModel(HeroesNewsRepository repo) {
+        this.repo = repo;
     }
 
     public LiveData<List<News>> loadFavoriteNews() {
-        return  SoccerNewsRepository.getInstance().getLocalDb().newsDAO().loadFavoriteNews();
+        return  repo.getLocalDb().newsDAO().loadFavoriteNews();
     }
 
     public void saveNews(News news){
-        AsyncTask.execute(() -> SoccerNewsRepository.getInstance().getLocalDb().newsDAO().save(news));
+        AsyncTask.execute(() -> repo.getLocalDb().newsDAO().save(news));
     }
-
 }

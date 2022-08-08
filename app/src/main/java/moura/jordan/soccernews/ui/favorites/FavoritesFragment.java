@@ -12,15 +12,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
+import dagger.hilt.android.AndroidEntryPoint;
 import moura.jordan.soccernews.ui.MainActivity;
 import moura.jordan.soccernews.databinding.FragmentFavoritesBinding;
 import moura.jordan.soccernews.domain.News;
 import moura.jordan.soccernews.ui.adapter.NewsAdapter;
 
+@AndroidEntryPoint
 public class FavoritesFragment extends Fragment {
 
     private FragmentFavoritesBinding binding;
-    private FavoritesViewModel favoritesViewModel;
+    FavoritesViewModel favoritesViewModel;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

@@ -9,19 +9,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import com.google.android.material.snackbar.Snackbar;
 
+import javax.inject.Inject;
+
+import dagger.hilt.android.AndroidEntryPoint;
 import moura.jordan.soccernews.R;
 import moura.jordan.soccernews.data.local.AppDatabase;
 import moura.jordan.soccernews.databinding.FragmentNewsBinding;
 import moura.jordan.soccernews.ui.adapter.NewsAdapter;
 
+@AndroidEntryPoint
 public class NewsFragment extends Fragment {
 
     private FragmentNewsBinding binding;
     private AppDatabase db;
-    private  NewsViewModel newsViewModel;
+    NewsViewModel newsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         newsViewModel = new ViewModelProvider(this).get(NewsViewModel.class);
