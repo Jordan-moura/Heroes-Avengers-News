@@ -1,6 +1,6 @@
 # Heroes Avengers News
 App Android: Simula uma rede de noticias sobre herois da marvel. Desafio de projeto proposto pelo Bootcamp Santader Mobile na DIO!
-Transformei o app de noticias sobre futebol feminino em herois da marvel
+Transformei o app de noticias sobre herois da marvel
 
 Segue os links de cada desenvolvimento do projeto entre as branchs:
 1. [Parte01](https://github.com/Jordan-moura/Women-s-Soccer-News/tree/Parte01) - abstrair uma solução que apresente notícias sobre futebol feminimo, com possibilidade de abrir o link original, favoritar e compartilhar cada notícia!
