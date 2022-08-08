@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_200">#705cff</color>
+    <color name="primary_500">#2a30d3</color>
+    <color name="primary_700">#0004a0</color>
+
+    <color name="secondary_200">#ff6439</color>
+    <color name="secondary_900">#c30000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="favorite_active">#705cff</color>
+    <color name="favorite_inactive">#534C4C</color>
+</resources>
